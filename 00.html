@@ -91,8 +91,8 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
     cursor: pointer;
 }
 
-.slides #tab1{
-    font-size: 20px;
+.slides #tab1, .slides #tab2{
+    font-size: 14px;
 }
 
 /*按鈕觸發呈現藍色*/
@@ -114,7 +114,7 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 <body>
 
-    <div id="KMCLOGO"><img src="KMC Logo.png"></div>
+    <div id="KMCLOGO"><img src="KMC Logo.png" alt="LOGO"></div>
 
     <model-viewer camera-controls id="exposure-demo" environment-image="neutral" src="01.gltf" shadow-intensity="0">
     </model-viewer>
@@ -124,9 +124,9 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
         <div class="slides" id="tabs"><!-- 滑塊 -->
             <!--選取的滑塊-->
 
-            <button class="slide selected" id="tab1" onclick="switchSrc(this, '01.gltf')">SILVER<br> GRAY</button>
+            <button class="slide selected" id="tab1" onclick="switchSrc(this, '02.gltf')">三角柄</button>
 
-            <button class="slide" id="tab3" onclick="switchSrc(this, '02.gltf')">EPT</button>
+            <button class="slide" id="tab2" onclick="switchSrc(this, '03.gltf')">3005新樣式</button>
 
         </div>
     </div>
