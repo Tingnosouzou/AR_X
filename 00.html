@@ -7,20 +7,21 @@
 
 <style>
 #KMCLOGO {
-    width: 99%;
-    position: absolute;
+    position: relative;
     float: right;
 }
 
 #KMCLOGO img {
-    width: 200px;
-    margin: 30px 50px;
+    width: 150px;
+    margin: 10%;
     float: right;
 }
 
 model-viewer {
+    position: absolute;
     width: 90%;
     height: 90%;
+    margin: 2%;
 }
 
 #ar-button:active {
@@ -59,11 +60,8 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 }
 
 .slider {
-    /* width: 100%;
-    text-align: center;
-    overflow: hidden; */
-    position: absolute;
-    margin: 30px 20px;
+    position: fixed;
+    margin: 2%;
     bottom: 10px;
 }
 
@@ -76,16 +74,12 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 }
 
 .slide {
+    display: flex;
+    background: #fff;
+    width: 150px;
+    margin: 3%;
     scroll-snap-align: center; /*start*/
     flex-shrink: 0.2;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    opacity:1;
-    margin-right: 10px;
-    display: flex;
-    border: 2px solid #b3b3b3; /*灰色*/
-    font-size: 35px;
     font-family: Arial;
     justify-content: center;
     cursor: pointer;
